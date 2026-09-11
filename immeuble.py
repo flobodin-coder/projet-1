@@ -1,5 +1,5 @@
 from turtle import *
-from random import rd 
+from random import random as rd
 
 setup(500, 500)
 
@@ -9,14 +9,6 @@ def porte():
 
 
  
-
-
-
-
-
-
-
-
 
 
     """porte"""
@@ -33,3 +25,14 @@ def porte():
 
 
 print(porte())
+
+
+
+
+
+
+
+
+
+
+
