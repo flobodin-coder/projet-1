@@ -6,12 +6,10 @@ def porte():
     up()
     goto(-200, -100)
     down()
-    pensize(2)
-    left(90)
-    for i in range(2):
-        forward(60)
-        right(90)
-        forward(40)
-        right(90)
+    goto(-200, -50)
+    goto(-170, -50)
+    goto(-170, -100)
+    goto(-200, -100)
+
 
 print(porte())
