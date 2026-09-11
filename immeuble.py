@@ -15,7 +15,7 @@ def porte():
     up()
     goto(-200, -100)
     begin_fill()
-    fillcolor(rd.choice(["brown", "black", "gray"]))
+    fillcolor(rd.choice(["red", "purple", "blue", "green", "yellow"]))
     down()
     goto(-200, -50)
     goto(-170, -50)
