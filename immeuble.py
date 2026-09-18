@@ -3,28 +3,40 @@ from random import random as rd
 
 setup(500, 500)
 
-def porte():
+def sol():
 
-    """immeuble"""
-
-
- 
-
-
-    """porte"""
+    """sol"""
     up()
-    goto(-200, -100)
-    begin_fill()
-    fillcolor(rd.choice(["red", "purple", "blue", "green", "yellow"]))
+    goto(-220, -100)
     down()
+    forward(420)
+
+
+def immeuble():
+    up()
     goto(-200, -50)
-    goto(-170, -50)
-    goto(-170, -100)
-    goto(-200, -100)
-    end_fill()
+    down()
+    pencolor(rd.randint(0,255))
+    pencolor(rd.randint(0,255))
+    pencolor(rd.randint(0,255))                 
+    forward(500)
+
+print(sol)   
+print(immeuble) 
 
 
-print(porte())
+"""porte
+up()
+goto(-200, -100)
+begin_fill()
+down()
+goto(-200, -50)
+goto(-170, -50)
+goto(-170, -100)
+goto(-200, -100)
+end_fill()"""
+
+
 
 
 
