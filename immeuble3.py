@@ -2,6 +2,8 @@ from turtle import *
 from random import *
 
 setup(1000, 500)
+colormode(255)
+speed(10)
 
 def rect(x, y, largeur, hauteur,couleur):
     up()
@@ -20,16 +22,17 @@ def rect(x, y, largeur, hauteur,couleur):
     left(90)
     end_fill
 
-def etage(x, ) :
+def etage() :
     axe_x = [-355, -175, 5, 185]
-    color = (randint(0,255),randint(0,255),randint(0,255))
     for x in axe_x:
+        color = (randint(0,255),randint(0,255),randint(0,255))
         rect(x, -100, 140,60, color)
 
 
 
 
 
+etage()
 done()
 
 
