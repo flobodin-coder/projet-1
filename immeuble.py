@@ -1,42 +1,115 @@
 from turtle import *
-from random import random as rd
+from random import *
 
-setup(500, 500)
+setup(1000, 500)
+colormode(255)
 
-def sol():
+def projet():
 
-    """sol"""
+    
+    """maison 1"""
+
     up()
-    goto(-220, -100)
+    goto(-175, -100)
+    color = (randint(0,255),randint(0,255),randint(0,255))
+    pencolor(color)
+    fillcolor(color)
     down()
-    forward(420)
+    begin_fill()
+    forward(140)
+    left(90)
+    forward(60)
+    left(90)      
+    forward(140)
+    left(90)
+    forward(60)
+    end_fill()
 
 
-def immeuble():
+
+    """maison 2"""
+    
     up()
-    goto(-200, -50)
+    left(90)
+    goto(-355, -100)
+    color = (randint(0,255),randint(0,255),randint(0,255))
+    pencolor(color)
+    fillcolor(color)
     down()
-    pencolor(rd.randint(0,255))
-    pencolor(rd.randint(0,255))
-    pencolor(rd.randint(0,255))                 
-    forward(500)
-
-print(sol)   
-print(immeuble) 
-
-
-"""porte
-up()
-goto(-200, -100)
-begin_fill()
-down()
-goto(-200, -50)
-goto(-170, -50)
-goto(-170, -100)
-goto(-200, -100)
-end_fill()"""
+    begin_fill()
+    forward(140)
+    left(90)
+    forward(60)
+    left(90)      
+    forward(140)
+    left(90)
+    forward(60)
+    end_fill()
 
 
+    """maison 3"""
+    
+    up()
+    left(90)
+    goto(5, -100)
+    color = (randint(0,255),randint(0,255),randint(0,255))
+    pencolor(color)
+    fillcolor(color)
+    down()
+    begin_fill()
+    forward(140)
+    left(90)
+    forward(60)
+    left(90)      
+    forward(140)
+    left(90)
+    forward(60)
+    end_fill()
+
+
+    """maison 4"""
+    
+    up()
+    left(90)
+    goto(185, -100)
+    color = (randint(0,255),randint(0,255),randint(0,255))
+    pencolor(color)
+    fillcolor(color)
+    down()
+    begin_fill()
+    forward(140)
+    left(90)
+    forward(60)
+    left(90)      
+    forward(140)
+    left(90)
+    forward(60)
+    end_fill()
+
+
+
+
+
+
+
+    pencolor(0 ,0, 0)
+    pensize(3)
+    up()
+    left(90)
+    goto(-400, -100)
+    down()
+    forward(800)
+
+
+
+
+
+
+
+    return None
+
+
+print(projet()) 
 
 
 
@@ -47,4 +120,9 @@ end_fill()"""
 
 
 
+
+
+
+
+done()
 
