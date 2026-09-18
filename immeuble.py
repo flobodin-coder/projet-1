@@ -3,7 +3,7 @@ from random import *
 
 setup(1000, 500)
 colormode(255)
-speed(1)
+speed(10)
 
 def projet():
 
@@ -62,6 +62,7 @@ def projet():
             i += 1
         up()
         goto(-340, -60)
+        left(90)
         forward(40)   
     end_fill()
 
