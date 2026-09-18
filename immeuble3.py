@@ -22,11 +22,14 @@ def rect(x, y, largeur, hauteur,couleur):
     left(90)
     end_fill
 
-def etage() :
+def immeuble(x,y,hauteur) :
     axe_x = [-355, -175, 5, 185]
+    etage = 0
     for x in axe_x:
         color = (randint(0,255),randint(0,255),randint(0,255))
         rect(x, -100, 140,60, color)
+        
+    
 
 
 
