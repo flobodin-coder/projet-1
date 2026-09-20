@@ -9,6 +9,14 @@ axe_x = [-355, -175, 5, 185]
 axe_y = [-100]
 largeur = 140
 longueur = 60
+    if etage == 1:
+        nb = 60
+    elif etage == 2:
+        nb = 120
+    elif etage == 3:
+        nb = 180
+    elif etage == 4:
+        nb = 240
 
 
 for x in axe_x:
