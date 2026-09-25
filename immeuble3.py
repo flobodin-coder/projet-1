@@ -44,7 +44,7 @@ def immeuble(x,y,hauteur) :
 
 
 
-immeuble()
+rect()
 done()
 
 
