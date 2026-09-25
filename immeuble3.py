@@ -10,8 +10,8 @@ def rect(x, y, largeur, hauteur,couleur):
     goto(x, y)
     down()
     fillcolor(couleur)
-    pencolor(couleur)
-    begin_fill
+    pencolor("Black")
+    begin_fill()
     forward(largeur)
     left(90)
     forward(hauteur)
@@ -20,31 +20,28 @@ def rect(x, y, largeur, hauteur,couleur):
     left(90)
     forward(hauteur)
     left(90)
-    end_fill
+    end_fill()
 
-def immeuble(x,y,hauteur) :
+def immeuble(x) :
     axe_x = [-355, -175, 5, 185]
-    etage = randint(1,5)
     hauteur = 0
-    if etage == 1:
-        hauteur = 60
-    elif etage == 2:
-        hauteur = 120
-    elif etage == 3:
-        hauteur = 180
-    else:
-        hauteur = 240
     for x in axe_x:
+        etage = randint(1,5)
+        if etage == 1:
+            hauteur = 60
+        elif etage == 2:
+            hauteur = 120
+        elif etage == 3:
+            hauteur = 180
+        else:
+            hauteur = 240
         color = (randint(0,255),randint(0,255),randint(0,255))
         rect(x, -100, 140, hauteur, color)
-        
+    
     
 
 
-
-
-
-rect()
+immeuble(0)
 done()
 
 
