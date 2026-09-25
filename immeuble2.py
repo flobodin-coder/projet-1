@@ -1,99 +1,44 @@
-from turtle import *
-from random import *
-
-setup(1000, 500)
-colormode(255)
-speed(10)
-
-axe_x = [-355, -175, 5, 185]
-axe_y = [-100]
-largeur = 140
-longueur = 60
-    if etage == 1:
-        nb = 60
-    elif etage == 2:
-        nb = 120
-    elif etage == 3:
-        nb = 180
-    elif etage == 4:
-        nb = 240
 
 
-for x in axe_x:
-    teleport(x, axe_y)
-    color = (randint(0,255),randint(0,255),randint(0,255))
-    pencolor(color)
-    fillcolor(color)
+def immeuble(x) :
+    global axe_x
+    axe_x = [-355, -175, 5, 185]
+    hauteur = 0
+    for x in axe_x:
+        etage = randint(1,5)
+        if etage == 1:
+            hauteur = 60
+        elif etage == 2:
+            hauteur = 120
+        elif etage == 3:
+            hauteur = 180
+        else:
+            hauteur = 240
 
-    begin_fill()
-    forward(largeur)
-    left(90)
-    forward(longueur)
-    left(90)
-    forward(largeur)
-    left(90)
-    forward(longueur)
-    left(90)
-
-
-"""def rez_chaussé (x, y, largeur, longueur):
-
-    for i in range(4):
-        
-        color = (randint(0,255),randint(0,255),randint(0,255))
-        pencolor(color)
-        fillcolor(color)
-
-        begin_fill()
-        forward(largeur)
-        left(90)
-        forward(longueur)
-        left(90)
-        forward(largeur)
-        left(90)
-        forward(longueur)
-        left(90)"""
+        rect(x, -100, 140, hauteur, color)
 
 
+def porte(x, h_porte, l_porte):
+    global axe_x
+    position = (randint(0, 2))
+    for i in axe_x:
+            if position == 0:
+                x = axe_x[0] - 15
+                goto(x, -100)
+            elif position == 1:
+                x = axe_x[0] - 55
+                goto(x, -100)
+            elif position == 2 :
+                x = axe_x - 95
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-"""def immeuble():
-    rez_chaussé()
-    pencolor(color)
-    fillcolor(color)
-    etage = randint(1-4)
-    if etage == 1:
-        nb = 60
-    elif etage == 2:
-        nb = 120
-    elif etage == 3:
-        nb = 180
-    else :
-        nb = 240
-
-    begin_fill()
-
-    end_fill()"""
-
-
-
-    
-
-
-
-
-
-
-done()
+            pencolor("black")
+            fillcolor("white")
+            begin_fill()
+            forward(l_porte)
+            left(90)
+            forward(h_porte)
+            left(90)
+            forward(l_porte)
+            left(90)
+            forward(h_porte)
+            end_fill()
