@@ -2,7 +2,7 @@
 
 def immeuble(x) :
     global axe_x
-    axe_x = [-355, -175, 5, 185]
+
     hauteur = 0
     for x in axe_x:
         etage = randint(1,5)

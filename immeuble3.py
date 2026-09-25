@@ -3,7 +3,7 @@ import random
 
 setup(1000, 500)
 colormode(255)
-speed(10)
+speed(100)
 
 def rect(x, y, largeur, hauteur,couleur):
     up()
@@ -55,24 +55,25 @@ def etage(x, y, couleur):
 
 
 def immeuble(x, y):
-    #color = random.choice( ["blue", "orange", "red", "green", "purple"])
-    couleur = "blue"
-    rez_chaussé(x, y, "blue")
-    nb_etage = random.randint(1,5)
-    if nb_etage == 1:
-        etage(x , y + 60, couleur)
-    elif nb_etage == 2:
-        etage(x , y + 60, couleur)
-        etage(x , y + 120, couleur)
-    elif etage == 3:
-        etage(x , y + 60, couleur)
-        etage(x , y + 120, couleur)
-        etage(x , y + 180, couleur)
-    elif nb_etage == 4:
-        etage(x , y + 60, couleur)
-        etage(x , y + 120, couleur)
-        etage(x , y + 180, couleur)
-        etage(x , y + 240, couleur)
+    axe_x = [-355, -175, 5, 185]
+    for i in axe_x:
+        couleur = random.choice( ["blue", "orange", "red", "green", "purple"] )
+        rez_chaussé(i, y, couleur)
+        nb_etage = random.randint(1,5)
+        if nb_etage == 1:
+            etage(i , y + 60, couleur)
+        elif nb_etage == 2:
+            etage(i , y + 60, couleur)
+            etage(i , y + 120, couleur)
+        elif etage == 3:
+            etage(i , y + 60, couleur)
+            etage(i , y + 120, couleur)
+            etage(i , y + 180, couleur)
+        elif nb_etage == 4:
+            etage(i , y + 60, couleur)
+            etage(i , y + 120, couleur)
+            etage(i , y + 180, couleur)
+            etage(i , y + 240, couleur)
 
 
         
