@@ -8,7 +8,6 @@ speed(100)
 def rect(x, y, largeur, hauteur,couleur):
     up()
     goto(x, y)
-    setheading(0)  
     down()
     fillcolor(couleur)
     pencolor("Black")
